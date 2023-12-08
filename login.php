@@ -18,6 +18,13 @@ require 'config.php';
     </header>
     <section class="container main">
         <form method="POST" action="<?=$base?>/login_action.php">
+            <div class="flash">
+                <?php if(!empty($_SESSION['flash'])): ?>
+                    <?=$_SESSION['flash']; ?>
+                    <?=$_SESSION['flash'] = ''; ?>
+                <?php endif; ?>
+            </div> 
+
             <input placeholder="Digite seu e-mail" class="input" type="email" name="email" />
 
             <input placeholder="Digite sua senha" class="input" type="password" name="password" />
