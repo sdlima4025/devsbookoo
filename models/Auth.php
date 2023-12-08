@@ -26,4 +26,8 @@ private $base;
         exit;
     }
 
+    public function validateLogin($email, $password) {
+        
+    }
+
 }
