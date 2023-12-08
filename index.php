@@ -7,4 +7,4 @@ $userInfo = $auth->checkToken();
 
 
 
-echo 'HOME';
+echo 'Index';
