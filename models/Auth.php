@@ -54,7 +54,7 @@ private $base;
 
     public function registerUser($name, $email, $password, $birthdate) {
         $userDao = new UserDaoMysql($this->pdo);
-        
+            
     }
 
 }
