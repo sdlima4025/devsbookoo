@@ -47,4 +47,14 @@ private $base;
         return false;
     }
 
+    public function emailExists($email) {
+        $userDao = new UserDaoMysql($this->pdo);
+            return $userDao->findByEmail($email) ? true : false;
+    }
+
+    public function registerUser($name, $email, $password, $birthdate) {
+        $userDao = new UserDaoMysql($this->pdo);
+        
+    }
+
 }
